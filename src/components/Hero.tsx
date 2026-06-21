@@ -1,24 +1,22 @@
-import Image from "next/image";
+import Button from "@/components/ui/Button";
 
+/**
+ * Hero section component displaying the introduction, main headings, and primary action buttons.
+ */
 export default function Hero() {
     return (
-        <section className="w-full md:h-screen py-8 px-4 sm:px-8 lg:py-64 lg:px-48 flex flex-col gap-8 md:justify-center">
-            <div className="text-center sm:text-start">
-                <h1 className="font-libre-baskerville text-[clamp(1rem,2vw,8rem)]">Hello, I'm</h1>
-                <h1 className="font-inter font-bold leading-tight tracking-tighter text-[clamp(1.5rem,3.5vw,16rem)]">
+        <section id="home" className="md:h-screen mx-8 lg:mx-48 flex flex-col gap-12 border-r-1 border-l-1 border-gray/20">
+            <div className="text-center flex flex-col gap-2 pt-32">
+                <h1 className="font-instrument-sans font-semibold text-gray border-t-1 border-b-1 border-gray/20">
                     Muhammad Abrar Rayva
                 </h1>
+                <h2 className="font-instrument-sans leading-tight text-3xl sm:text-5xl md:text-7xl border-t-1 border-b-1 border-gray/20">
+                    <span className="font-libre-baskerville">Design</span>, <span className="font-pixelify-sans">Code</span>, <span className="font-medium tracking-tighter">Cloud</span>
+                </h2>
             </div>
-            <div className="relative w-full aspect-video sm:aspect-547/217">
-                <Image
-                    src="/abrarrayva.jpg"
-                    alt="Muhammad Abrar Rayva"
-                    quality={100}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-                    fill
-                    className="object-cover"
-                    priority
-                />
+            <div className="justify-center flex flex-col sm:flex-row gap-4 sm:gap-6 font-space-grotesk border-t-1 border-b-1 border-gray/20">
+                <Button className="uppercase">Projects</Button>
+                <Button className="uppercase">Contact</Button>
             </div>
         </section>
     );

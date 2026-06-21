@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI Agent & IDE Rules / Logs / Caches
+.agents/
+.agents-cache/
+.gemini/
+.gemini-cache/
+.brain/
+.copilot/
+.cursor/
+.cursorrules
+.windsurf/
+.windsurfrules
+ai-logs/
+agent-logs/
+*.ai.log
+

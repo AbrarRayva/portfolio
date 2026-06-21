@@ -1,7 +1,16 @@
-import Hero from "@/components/Hero";
+'use client';
 
+import Hero from "@/components/Hero";
+import Navbar from "@/components/ui/Navbar";
+
+/**
+ * Main Home page component rendering the floating Navbar and all portfolio sections.
+ */
 export default function Home() {
-    return (
-        <Hero/>
-    );
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
 }

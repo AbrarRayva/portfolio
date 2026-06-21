@@ -1,20 +1,36 @@
 @import "tailwindcss";
 
 :root {
-  --white: #F8F9FE;
+  --white: #f4f4f4;
   --black: #121212;
+  --gray: #7B7B7B;
+  --blue-brand-1: #4300FF;
+  --blue-brand-2: #0065F8;
+  --green-brand-1: #bcff00;
 }
 
 @theme inline {
   --color-white: var(--white);
   --color-black: var(--black);
+  --color-gray: var(--gray);
+  --color-blue-brand-1: var(--blue-brand-1);
+  --color-blue-brand-2: var(--blue-brand-2);
+  --color-blue-brand-primary: var(--blue-brand-1);
+  --color-blue-brand-secondary: var(--blue-brand-2);
 
-  --font-inter: var(--font-inter);
+  --font-instrument-sans: var(--font-instrument-sans);
+  --font-pixelify-sans: var(--font-pixelify-sans);
+  --font-space-grotesk: var(--font-space-grotesk);
   --font-libre-baskerville: var(--font-libre-baskerville);
 }
 
 body {
-  background: var(--white);
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background-color: var(--green-brand-1);
+  color: var(--blue-brand-1);
 }
