@@ -1,6 +1,6 @@
 'use client';
 
-import Hero from "@/components/Hero";
+import Hero from "@/components/landing/Hero";
 import Navbar from "@/components/ui/Navbar";
 
 /**
