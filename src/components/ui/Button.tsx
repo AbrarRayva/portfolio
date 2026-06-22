@@ -2,7 +2,7 @@ import { Button as HeadlessButton, type ButtonProps } from '@headlessui/react'
 import clsx from 'clsx'
 
 interface CustomButtonProps extends ButtonProps {
-  variant?: 'primary' | 'outline'
+  variant?: 'primary' | 'white' | 'outline'
 }
 
 export default function CustomButton({ 
@@ -15,6 +15,7 @@ export default function CustomButton({
   
   const variants = {
     primary: 'bg-blue-brand-1 text-white data-[focus]:ring-blue-brand-1',
+    white: 'bg-white text-blue-brand-1 data-[focus]:ring-white',
     outline: 'border border-white-300 text-white data-[focus]:ring-white'
   }
 
